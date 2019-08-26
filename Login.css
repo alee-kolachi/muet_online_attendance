@@ -1,0 +1,60 @@
+body{
+	margin: 0;
+	padding:0;
+	background: url(mehran.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Arial;
+	}
+header{
+
+	margin-top:2px;
+	background-color: #002365;
+	height: 153px;
+}
+#heading{
+	font-size: 45px;
+	color: white;
+	padding-top: 16px;
+	margin-top: 1px;
+}
+img{
+	
+	padding-left:2px;
+	padding-top:2px;	
+}
+#form{
+
+	color: #002365;
+	border: 3px solid  #002365;
+	background: #6a7cad;
+	width: 400px;
+	height: 350px;
+	margin-bottom: 7px;
+	margin-left:500px;
+	border-radius: 8px
+}
+#username{
+	width: 70%;
+	font-size: 18px;
+	
+}
+#password{
+	width: 70%;
+	font-size: 18px;
+}
+.radio{
+	padding-top: 2px;
+	font-size: 18px;
+}
+#Login_btn{
+	padding: 12px 120px;
+	font-size: 18px;
+	color: white;
+	border-color: white;
+	border-radius: 6px;
+	background-color: #002365; 
+}
+#register{
+	font-size: 18px;
+}

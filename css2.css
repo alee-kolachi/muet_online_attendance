@@ -1,0 +1,56 @@
+nav{
+    background-color: #f1f2f6;
+}
+span{
+    font-size: 40px;
+        border-left: 3px solid #aaaaaa;
+    padding-left: 10px;
+}
+img{
+    
+
+}
+
+#txtEmail, #txtPassword, #select   {
+    font-family: "Roboto" sans-serif;
+    padding: 5px 0px 5px 15px;
+    font-size: 20px;
+    outline: none;
+}
+#select{
+    margin-bottom: 7px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#txtEmail:focus, #txtPassword:focus, #select:focus{
+    outline: none;
+    border-color: #5352ed;
+    box-shadow: none;
+}
+#btnLogin{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Roboto" sans-serif;
+    background-color: #5352ed;
+    color: white;
+    transition: all 1s ease 0s;
+    font-variant: small-caps;
+    border: none;
+    
+}
+#btnLogin:hover{
+    box-shadow: 1px 1px 10px #cccccc;
+    background-color: dark#5352ed;
+}
+p{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    color: #5352ed;
+    margin-bottom: -10px;
+}
+#container{
+    padding: 180px 40px 200px 40px;
+    border-radius: 20px;
+    
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="homeTeacher.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm shadow" style="">
+        <!-- Brand/logo -->
+        <img src="logo.png" class="navbar-brand" width="80px" height="80px" />
+
+        <span class="display justify-content-center" style="font-weight: 500;
+    width: 100%; color: #5352ed;">
+            MUET ONLINE ATTENDANCE
+
+        </span>
+    </nav>
+    <div class="container bg-light mt-2">
+        <h1 class="display-4 " style="text-align: center;">Teacher - 12345</h1>
+        <hr>
+        <div class="mt-2"></div>
+<div class="row">
+    <div class="col-4">
+        <div class="form-group "  >
+            <label for="sel1" >Select Subject:</label>
+            <select class="form-control mr-4" id="sel1" >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+
+            <label for="sel1" >Select Section:</label>
+            <select class="form-control" id="sel1" >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+
+    </div>
+    <div class="col-8">
+        <table class="table table-bordered table-striped header-fixed ">
+            <thead>
+                <tr>
+                    <th>Roll No</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                <tr>
+                    <td>John</td>
+                    <td>
+
+                        <button class="btn btn-outline-primary" id="btnStatus">Status</button>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td><button class="btn btn-outline-primary" id="btnStatus1">Status</button></td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td><button class="btn btn-outline-primary" id="btnStatus2">Status</button></td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+        
+        <br>
+        
+
+
+    </div>
+    <script src="homeTeacher.js"></script>
+    <script>
+        $(":button").click(function() {
+            console.log(this);
+            
+            if (this.innerHTML === "Status") {
+                this.innerHTML = "Present";
+                this.classList.add("btn-primary");
+                this.classList.remove("btn-outline-primary");
+            } else if (this.innerHTML === "Present") {
+                this.innerHTML = "Absent";
+                this.classList.remove("btn-primary");
+                this.classList.remove("btn-outline-primary");
+                this.classList.add("btn-danger");
+            } else if (this.innerHTML === "Absent") {
+                this.innerHTML = "Present";
+                this.classList.remove("btn-danger");
+                this.classList.add("btn-primary");
+            }
+        
+        });
+    </script>
+</body>
+
+</html>
